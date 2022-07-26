@@ -81,7 +81,7 @@ done
 Run:close()
 redis:del(Server_Done.."id")
 redis:del(Server_Done.."token")
-os.execute('cp -a ../MooN/ ../'..Json_Info.result.username..' && rm -fr ~/MooN')
+os.execute('cp -a ../eeeamem/ ../'..Json_Info.result.username..' && rm -fr ~/eeeamem')
 os.execute('cd && cd '..Json_Info.result.username..';chmod +x start;chmod +x Run;./Run')
 end
 Information = dofile('./sudo.lua')
@@ -2318,7 +2318,7 @@ end
 if Text == "UpSu" then
 bot.answerCallbackQuery(data.id, "- تم تحديث السورس", true)
 os.execute('rm -rf start.lua')
-os.execute('https://raw.githubusercontent.com/MoooNsource/MooN/main/start.lua')
+os.execute('https://raw.githubusercontent.com/Armofamx/eeeamem/main/start.lua')
 dofile('start.lua')  
 end
 if Text == "UpBot" then
@@ -3832,7 +3832,7 @@ if text == ("تحديث السورس") then
 if programmer(msg) then  
 bot.sendText(msg.chat_id,msg.id,"*- تم تحديث السورس الى الاصدار الجديد .*","md",true)
 os.execute('rm -rf start.lua')
-os.execute('https://raw.githubusercontent.com/MoooNsource/MooN/main/start.lua')
+os.execute('https://raw.githubusercontent.com/Armofamx/eeeamem/main/start.lua')
 dofile('start.lua')  
 end
 end
