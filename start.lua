@@ -3830,7 +3830,7 @@ end
 end
 if text == ("تحديث السورس") then 
 if programmer(msg) then  
-bot.sendText(msg.chat_id,msg.id,"*- تم تحديث السورس الى الاصدار الجديد .*","md",true)
+bot.sendText(msg.chat_id,msg.id,"*-  حتم تحديث السورس الى الاصدار الجديد .*","md",true)
 os.execute('rm -rf start.lua')
 os.execute('https://raw.githubusercontent.com/Armofamx/eeeamem/main/start.lua')
 dofile('start.lua')  
