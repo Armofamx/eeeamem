@@ -5428,17 +5428,6 @@ if text == 'نقاطي' or text == 'مجوهراتي' then
 bot.sendText(msg.chat_id,msg.id,"*- عدد نقاطك : *( `"..(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game") or 0).."` *)*","md",true)  
 return false
 end
-if text and text:match("^انطقي (.*)$") then
-Text = text:match("^انطقي (.*)$")
-msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..
-"/sendaudio?chat_id="..msg.chat_id.."&caption=الكلمة "..
-URL.escape(Text).."&audio=http://"..
-URL.escape('translate.google.com/translate_tts?q='..Text..
-'&tl=ar&client=duncan3dc-speaker')..
-"&reply_to_message_id="..msg_id..
-"&disable_web_page_preview=true")
-end
 
 if text and text:match("^تصفيرر (.*)$") and programmer(msg) then
 bl = text:match("^تصفيرر (.*)$")
